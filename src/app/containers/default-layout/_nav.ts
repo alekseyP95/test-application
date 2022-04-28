@@ -2,242 +2,235 @@ import { INavData } from '@coreui/angular';
 
 export const navItems: INavData[] = [
   {
-    name: 'Dashboard',
+    name: 'Data Entry',
     url: '/dashboard',
-    iconComponent: { name: 'cil-speedometer' },
-    badge: {
-      color: 'info',
-      text: 'NEW'
-    }
-  },
-  {
-    title: true,
-    name: 'Theme'
-  },
-  {
-    name: 'Colors',
-    url: '/theme/colors',
-    iconComponent: { name: 'cil-drop' }
-  },
-  {
-    name: 'Typography',
-    url: '/theme/typography',
-    linkProps: { fragment: 'someAnchor' },
-    iconComponent: { name: 'cil-pencil' }
-  },
-  {
-    name: 'Components',
-    title: true
-  },
-  {
-    name: 'Base',
-    url: '/base',
-    iconComponent: { name: 'cil-puzzle' },
+    iconComponent: { name: 'cil-spreadsheet' },
     children: [
       {
-        name: 'Accordion',
-        url: '/base/accordion'
+        name: 'Receivables',
+        url: '/'
       },
       {
-        name: 'Breadcrumbs',
-        url: '/base/breadcrumbs'
+        name: 'Assets',
+        url: '/'
       },
       {
-        name: 'Cards',
-        url: '/base/cards'
+        name: 'Projects',
+        url: '/'
       },
       {
-        name: 'Carousel',
-        url: '/base/carousel'
+        name: 'Purchasing',
+        url: '/'
       },
       {
-        name: 'Collapse',
-        url: '/base/collapse'
-      },
-      {
-        name: 'List Group',
-        url: '/base/list-group'
-      },
-      {
-        name: 'Navs & Tabs',
-        url: '/base/navs'
-      },
-      {
-        name: 'Pagination',
-        url: '/base/pagination'
-      },
-      {
-        name: 'Placeholder',
-        url: '/base/placeholder'
-      },
-      {
-        name: 'Popovers',
-        url: '/base/popovers'
-      },
-      {
-        name: 'Progress',
-        url: '/base/progress'
-      },
-      {
-        name: 'Spinners',
-        url: '/base/spinners'
-      },
-      {
-        name: 'Tables',
-        url: '/base/tables'
-      },
-      {
-        name: 'Tabs',
-        url: '/base/tabs'
-      },
-      {
-        name: 'Tooltips',
-        url: '/base/tooltips'
+        name: 'Reconciliation',
+        url: '/'
       }
     ]
   },
   {
-    name: 'Buttons',
-    url: '/buttons',
-    iconComponent: { name: 'cil-cursor' },
+    name: 'Review Process',
+    url: '/theme/typography',
+    linkProps: { fragment: 'someAnchor' },
+    iconComponent: { name: 'cil-pencil' },
     children: [
       {
-        name: 'Buttons',
+        name: 'General Ledger',
+        url: '/base/accordion'
+      },
+      {
+        name: 'Payables',
+        url: '/base/breadcrumbs'
+      },
+      {
+        name: 'Receivables',
+        url: '/base/cards'
+      },
+      {
+        name: 'Assets',
+        url: '/base/carousel'
+      },
+      {
+        name: 'Projects',
+        url: '/base/collapse'
+      },
+      {
+        name: 'Purchasing',
+        url: '/base/list-group'
+      },
+      {
+        name: 'Common',
+        url: '/base/navs'
+      },
+      {
+        name: 'Reconcilations',
+        url: '/base/pagination'
+      },
+    ]
+  },
+  {
+    name: 'Reports',
+    url: '/base',
+    iconComponent: { name: 'cil-calendar' },
+    children: [
+      {
+        name: 'General Ledger',
+        url: '/base/accordion',
+        children: [
+          {
+            name: 'Test',
+            url: '/'
+          }
+        ]
+      },
+      {
+        name: 'Payables',
+        url: '/base/breadcrumbs'
+      },
+      {
+        name: 'Receivables',
+        url: '/base/cards'
+      },
+      {
+        name: 'Assets',
+        url: '/base/carousel'
+      },
+      {
+        name: 'Projects',
+        url: '/base/collapse'
+      },
+      {
+        name: 'Purchasing',
+        url: '/base/list-group'
+      },
+      {
+        name: 'Reconciliations',
+        url: '/base/navs'
+      },
+      {
+        name: 'Control',
+        url: '/base/pagination'
+      }
+    ]
+  },
+  {
+    name: 'Inquiries',
+    url: '/buttons',
+    iconComponent: { name: 'cil-list' },
+    children: [
+      {
+        name: 'General Ledger',
         url: '/buttons/buttons'
       },
       {
-        name: 'Button groups',
+        name: 'Payables',
         url: '/buttons/button-groups'
       },
       {
-        name: 'Dropdowns',
+        name: 'Receivables',
+        url: '/buttons/dropdowns'
+      },
+      {
+        name: 'Assets',
+        url: '/buttons/dropdowns'
+      },
+      {
+        name: 'Projects',
+        url: '/buttons/dropdowns'
+      },
+      {
+        name: 'Purchasing',
+        url: '/buttons/dropdowns'
+      },
+      {
+        name: 'Common',
+        url: '/buttons/dropdowns'
+      },
+      {
+        name: 'Reconciliations',
+        url: '/buttons/dropdowns'
+      },
+      {
+        name: 'Control',
         url: '/buttons/dropdowns'
       },
     ]
   },
   {
-    name: 'Forms',
+    name: 'Configuration Rules',
     url: '/forms',
-    iconComponent: { name: 'cil-notes' },
+    iconComponent: { name: 'cil-cursor' },
     children: [
       {
-        name: 'Form Control',
+        name: 'General Ledger',
         url: '/forms/form-control'
       },
       {
-        name: 'Select',
+        name: 'Payables',
         url: '/forms/select'
       },
       {
-        name: 'Checks & Radios',
+        name: 'Receivables',
         url: '/forms/checks-radios'
       },
       {
-        name: 'Range',
+        name: 'Assets',
         url: '/forms/range'
       },
       {
-        name: 'Input Group',
+        name: 'Projects',
         url: '/forms/input-group'
       },
       {
-        name: 'Floating Labels',
+        name: 'Purchasing',
         url: '/forms/floating-labels'
       },
       {
-        name: 'Layout',
+        name: 'Common',
         url: '/forms/layout'
       },
       {
-        name: 'Validation',
+        name: 'Reconciliations',
+        url: '/forms/validation'
+      },
+      {
+        name: 'Control',
         url: '/forms/validation'
       }
     ]
   },
   {
-    name: 'Charts',
+    name: 'Utilities',
     url: '/charts',
-    iconComponent: { name: 'cil-chart-pie' }
-  },
-  {
-    name: 'Icons',
-    iconComponent: { name: 'cil-star' },
-    url: '/icons',
+    iconComponent: { name: 'cil-settings' },
     children: [
       {
-        name: 'CoreUI Free',
-        url: '/icons/coreui-icons',
-        badge: {
-          color: 'success',
-          text: 'FREE'
-        }
+        name: 'General Ledger',
+        url: '/forms/form-control'
       },
       {
-        name: 'CoreUI Flags',
-        url: '/icons/flags'
+        name: 'Payables',
+        url: '/forms/select'
       },
       {
-        name: 'CoreUI Brands',
-        url: '/icons/brands'
-      }
-    ]
-  },
-  {
-    name: 'Notifications',
-    url: '/notifications',
-    iconComponent: { name: 'cil-bell' },
-    children: [
-      {
-        name: 'Alerts',
-        url: '/notifications/alerts'
+        name: 'Receivables',
+        url: '/forms/checks-radios'
       },
       {
-        name: 'Badges',
-        url: '/notifications/badges'
+        name: 'Assets',
+        url: '/forms/range'
       },
       {
-        name: 'Modal',
-        url: '/notifications/modal'
+        name: 'Purchasing',
+        url: '/forms/floating-labels'
       },
       {
-        name: 'Toast',
-        url: '/notifications/toasts'
-      }
-    ]
-  },
-  {
-    name: 'Widgets',
-    url: '/widgets',
-    iconComponent: { name: 'cil-calculator' },
-    badge: {
-      color: 'info',
-      text: 'NEW'
-    }
-  },
-  {
-    title: true,
-    name: 'Extras'
-  },
-  {
-    name: 'Pages',
-    url: '/login',
-    iconComponent: { name: 'cil-star' },
-    children: [
-      {
-        name: 'Login',
-        url: '/login'
+        name: 'Common',
+        url: '/forms/layout'
       },
       {
-        name: 'Register',
-        url: '/register'
-      },
-      {
-        name: 'Error 404',
-        url: '/404'
-      },
-      {
-        name: 'Error 500',
-        url: '/500'
+        name: 'Control',
+        url: '/forms/validation'
       }
     ]
   },
